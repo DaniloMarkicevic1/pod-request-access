@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Chivo:wght@300;700&display=swap");
+body {
+  font-family: "Chivo", sans-serif;
+  background-color: #121725;
+}
+body main article .title {
+  text-transform: uppercase;
+  font-size: 26px;
+  line-height: 38px;
+  color: #ffffff;
+}
+body main article .titleGreen {
+  color: #54e6af;
+}
+body main article .text {
+  font-size: 15px;
+  line-height: 25px;
+  color: #c2cbe5;
+}
+body main footer .email .btn {
+  font-family: "Chivo", sans-serif;
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #121725;
+  background-color: #54e6af;
+}
+body main footer .email .input {
+  background-color: #2c344b;
+  font-size: 14px;
+  line-height: 28px;
+  background-color: #2c344b;
+}
+body main footer .error {
+  font-size: 12px;
+  line-height: 14px;
+  color: #fb3e3e;
+}
+
+body {
+  display: flex;
+  text-align: center;
+}
+body .backgroundImg {
+  min-height: 676px;
+  background-size: cover;
+  background-image: linear-gradient(to bottom, rgba(18, 23, 37, 0.9), rgba(18, 23, 37, 0.9)), url("../images/mobile/image-host.jpg");
+  background-repeat: no-repeat;
+}
+body main header {
+  padding: 62px 120px 0;
+}
+body main article {
+  padding: 57px 24px 0;
+}
+body main article .text {
+  padding-top: 16px;
+}
+body main footer {
+  display: flex;
+  flex-direction: column-reverse;
+}
+body main footer .logos {
+  display: flex;
+  padding: 33px 30px 0;
+  opacity: 0.5;
+  align-items: center;
+  justify-content: space-between;
+}
+body main footer .logos img {
+  width: 18%;
+}
+body main footer .email {
+  padding: 48px 24px 94px;
+}
+body main footer .email .input,
+body main footer .email .btn {
+  border-radius: 28px;
+}
+body main footer .email .input {
+  width: 100%;
+  max-width: 400px;
+  padding: 9px 0px 9px 32px;
+  border: none;
+}
+body main footer .email .btn {
+  padding: 9px 109px;
+  margin-top: 16px;
+  border: none;
+}
+body main footer .error {
+  display: none;
+}
+
+.backgroundImg {
+  background-image: url("../images/tablet/image-host.jpg");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*# sourceMappingURL=css.css.map */
