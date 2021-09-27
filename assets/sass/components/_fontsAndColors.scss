@@ -49,11 +49,11 @@ body {
           border: none;
           outline: none;
         }
-        .error {
-          font-size: v.$errorText;
-          line-height: v.$errorTextLH;
-          color: v.$errorColor;
-        }
+      }
+      .error {
+        font-size: v.$errorText;
+        line-height: v.$errorTextLH;
+        color: v.$errorColor;
       }
     }
   }

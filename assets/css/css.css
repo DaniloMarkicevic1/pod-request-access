@@ -44,7 +44,7 @@ body main footer .email .input:focus {
   border: none;
   outline: none;
 }
-body main footer .email .error {
+body main footer .error {
   font-size: 12px;
   line-height: 14px;
   color: #fb3e3e;
@@ -125,13 +125,9 @@ body main footer .email .btn {
   margin-top: 16px;
   border: none;
 }
-body main footer .no-error {
-  display: none;
-}
 body main footer .error {
   padding: 8px 0 0 32px;
-  color: red;
-  visibility: hidden;
+  display: none;
 }
 
 @media screen and (min-width: 700px) {

@@ -57,13 +57,9 @@ body {
           border: none;
         }
       }
-      .no-error {
-        display: none;
-      }
       .error {
         padding: 8px 0 0 32px;
-        color: red;
-        visibility: hidden;
+        display: none;
       }
     }
   }
