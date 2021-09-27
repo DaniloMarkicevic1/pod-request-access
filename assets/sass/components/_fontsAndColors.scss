@@ -1,0 +1,95 @@
+@use "../_variables" as v;
+
+body {
+  font-family: v.$font;
+  background-color: v.$primary;
+  main {
+    article {
+      .title {
+        text-transform: uppercase;
+        font-size: v.$titleSizeMob;
+        line-height: v.$titleLHMob;
+        color: v.$white;
+        .titleGreen {
+          color: v.$lightGreen;
+        }
+      }
+      .text {
+        font-size: v.$textSizeMob;
+        line-height: v.$textLHMob;
+        color: v.$textColor;
+      }
+    }
+    footer {
+      .email {
+        .btn {
+          font-family: v.$font;
+          text-transform: capitalize;
+          font-size: v.$emailTextSize;
+          font-weight: 700;
+          line-height: v.$emailTextLH;
+          color: v.$primary;
+          background-color: v.$lightGreen;
+          z-index: 10;
+        }
+        .btn:hover,
+        .btn:active {
+          cursor: v.$cursor;
+          background-color: v.$btnHover;
+        }
+        .input {
+          font-family: v.$font;
+          background-color: v.$emailColor;
+          font-size: v.$emailTextSize;
+          line-height: v.$emailTextLH;
+          background-color: v.$emailColor;
+          font-weight: 700;
+        }
+        .input:focus {
+          border: none;
+          outline: none;
+        }
+        .error {
+          font-size: v.$errorText;
+          line-height: v.$errorTextLH;
+          color: v.$errorColor;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 700px) {
+  body {
+    main {
+      article,
+      footer {
+        background-color: v.$primary;
+      }
+      article {
+        .title {
+          font-size: v.$titleTSize;
+          line-height: v.$titleTLH;
+        }
+        .text {
+          font-size: v.$textSize;
+          line-height: v.$textLH;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1300px) {
+  body {
+    main {
+      .cont {
+        article {
+          .title {
+            font-size: v.$titleSize;
+            line-height: v.$titleLH;
+          }
+        }
+      }
+    }
+  }
+}

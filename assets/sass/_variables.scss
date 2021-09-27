@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Chivo:wght@300;700&display=swap");
+// Colors
+$white: #ffffff;
+$primary: #121725;
+$textColor: #c2cbe5;
+$lightGreen: #54e6af;
+$emailColor: #2c344b;
+$logosColor: #5a668a;
+$errorColor: #fb3e3e;
+// Button
+$cursor: url("../images/pointer.png"), pointer;
+$btnHover: #b3ffe2;
+
+// Typography
+$font: "Chivo", sans-serif;
+$titleSize: 52px;
+$titleLH: 62px;
+
+$textSize: 18px;
+$textLH: 28px;
+
+$emailTextSize: 14px;
+$emailTextLH: 28px;
+
+$errorText: 12px;
+$errorTextLH: 14px;
+
+// Tablet
+
+$titleTSize: 48px;
+$titleTLH: 56px;
+
+// Mobile
+$titleSizeMob: 26px;
+$titleLHMob: 38px;
+
+$textSizeMob: 15px;
+$textLHMob: 25px;

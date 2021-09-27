@@ -1,0 +1,8 @@
+@use "./components/_fontsAndColors";
+@use "./breakpoints/_helper";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

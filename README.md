@@ -1,4 +1,4 @@
-$ sass --watch assets/sass/sass.sass assets/css/css.css
+sass --watch assets/sass/sass.scss assets/css/css.css
 
 **To do this challenge, you need a basic understanding of HTML, CSS, and JavaScript.**
 

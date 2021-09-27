@@ -1,0 +1,58 @@
+@media screen and (min-width: 1300px) {
+  body {
+    align-items: center;
+    .pattern-dots {
+      text-align: right;
+      padding: 0;
+      margin-top: -65px;
+      width: 1440px;
+    }
+    .backgroundImg {
+      padding: 0;
+      padding-left: 165px;
+      margin-top: 130px;
+      background-image: url("../images/desktop/image-host.jpg");
+      background-size: auto;
+      min-width: 1440px;
+      header {
+        padding-top: 102px;
+        padding-left: 0px;
+      }
+      .cont {
+        padding: 0;
+        max-width: 732px;
+        article {
+          padding: 0;
+          .title {
+            padding-top: 93px;
+          }
+          .text {
+            padding: 24px 278px 0 0;
+          }
+        }
+        .footer {
+          .email {
+            padding: 0;
+            .input {
+              padding-right: 175px;
+            }
+            .btn {
+              margin-top: 0px;
+              z-index: 2;
+            }
+            .btn:hover,
+            .btn:active {
+                cursor: url("../images/pointer.png");
+            }
+          }
+          .logos {
+            padding: 64px 187px 0 0;
+            img {
+              width: 17%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
