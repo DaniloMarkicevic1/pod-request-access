@@ -28,8 +28,21 @@ body {
         opacity: 0.5;
         align-items: center;
         justify-content: space-between;
-        img {
-          width: 18%;
+        .spotify {
+          width: 56px;
+          height: 17px;
+        }
+        .apple {
+          width: 45px;
+          height: 17px;
+        }
+        .google {
+          width: 73px;
+          height: 11px;
+        }
+        .pocket {
+          width:77px;
+          height: 15px;
         }
       }
       .email {

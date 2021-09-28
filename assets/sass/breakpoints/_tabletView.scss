@@ -22,7 +22,7 @@
     .backgroundImg {
       background-size: contain;
       background-position: right;
-      
+
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
@@ -55,6 +55,22 @@
         }
         .logos {
           padding: 64px 99px 0 39px;
+          .spotify {
+            width: 96px;
+            height: 29px;
+          }
+          .apple {
+            width: 78px;
+            height: 29px;
+          }
+          .google {
+            width: 125px;
+            height: 18px;
+          }
+          .pocket {
+            width: 129px;
+            height: 26px;
+          }
         }
       }
     }
