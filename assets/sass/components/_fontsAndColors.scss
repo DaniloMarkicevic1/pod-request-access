@@ -4,6 +4,8 @@ body {
   font-family: v.$font;
   background-color: v.$primary;
   main {
+    background-image: v.$mobileImg;
+    background-repeat: no-repeat;
     article {
       .title {
         text-transform: uppercase;
@@ -61,7 +63,8 @@ body {
 
 @media screen and (min-width: 700px) {
   body {
-    main {
+    .backgroundImg {
+      background-image: v.$tabletImg;
       article,
       footer {
         background-color: v.$primary;
@@ -81,12 +84,20 @@ body {
 }
 @media screen and (min-width: 1300px) {
   body {
-    main {
+    .backgroundImg {
+      background-image: v.$desktopImg;
       .cont {
         article {
           .title {
             font-size: v.$titleSize;
             line-height: v.$titleLH;
+          }
+        }
+        footer {
+          .email {
+            .btn:hover {
+              cursor: v.$cursor;
+            }
           }
         }
       }

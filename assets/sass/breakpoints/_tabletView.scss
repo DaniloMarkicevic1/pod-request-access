@@ -22,12 +22,7 @@
     .backgroundImg {
       background-size: contain;
       background-position: right;
-      background-image: linear-gradient(
-          to bottom,
-          rgba(18, 23, 37, 0.1),
-          rgba(18, 23, 37, 0.1)
-        ),
-        url("../images/tablet/image-host.jpg");
+      
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
@@ -43,6 +38,9 @@
       footer {
         flex-direction: column;
         padding-top: 40px;
+        .error {
+          padding: 9px 0 0 64px;
+        }
         .email {
           padding: 0;
           padding-left: 39px;

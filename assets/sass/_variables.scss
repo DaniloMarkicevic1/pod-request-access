@@ -36,3 +36,19 @@ $titleLHMob: 38px;
 
 $textSizeMob: 15px;
 $textLHMob: 25px;
+
+// Background Images
+$mobileImg: linear-gradient(
+    to bottom,
+    rgba(18, 23, 37, 0.9),
+    rgba(18, 23, 37, 0.9)
+  ),
+  url("../images/mobile/image-host.jpg");
+
+$tabletImg: linear-gradient(
+    to bottom,
+    rgba(18, 23, 37, 0.1),
+    rgba(18, 23, 37, 0.1)
+  ),
+  url("../images/tablet/image-host.jpg");
+$desktopImg: url("../images/desktop/image-host.jpg");

@@ -3,6 +3,10 @@ body {
   font-family: "Chivo", sans-serif;
   background-color: #121725;
 }
+body main {
+  background-image: linear-gradient(to bottom, rgba(18, 23, 37, 0.9), rgba(18, 23, 37, 0.9)), url("../images/mobile/image-host.jpg");
+  background-repeat: no-repeat;
+}
 body main article .title {
   text-transform: uppercase;
   font-size: 26px;
@@ -51,23 +55,32 @@ body main footer .error {
 }
 
 @media screen and (min-width: 700px) {
-  body main article,
-body main footer {
+  body .backgroundImg {
+    background-image: linear-gradient(to bottom, rgba(18, 23, 37, 0.1), rgba(18, 23, 37, 0.1)), url("../images/tablet/image-host.jpg");
+  }
+  body .backgroundImg article,
+body .backgroundImg footer {
     background-color: #121725;
   }
-  body main article .title {
+  body .backgroundImg article .title {
     font-size: 48px;
     line-height: 56px;
   }
-  body main article .text {
+  body .backgroundImg article .text {
     font-size: 18px;
     line-height: 28px;
   }
 }
 @media screen and (min-width: 1300px) {
-  body main .cont article .title {
+  body .backgroundImg {
+    background-image: url("../images/desktop/image-host.jpg");
+  }
+  body .backgroundImg .cont article .title {
     font-size: 52px;
     line-height: 62px;
+  }
+  body .backgroundImg .cont footer .email .btn:hover {
+    cursor: url("../images/pointer.png"), pointer;
   }
 }
 body {
@@ -81,8 +94,6 @@ body .pattern-dots {
 body .backgroundImg {
   min-height: 667px;
   background-size: cover;
-  background-image: linear-gradient(to bottom, rgba(18, 23, 37, 0.9), rgba(18, 23, 37, 0.9)), url("../images/mobile/image-host.jpg");
-  background-repeat: no-repeat;
 }
 body main header {
   padding: 62px 120px 0;
@@ -126,7 +137,8 @@ body main footer .email .btn {
   border: none;
 }
 body main footer .error {
-  padding: 8px 0 0 32px;
+  padding-top: 9px;
+  margin-bottom: -40px;
   display: none;
 }
 
@@ -155,7 +167,6 @@ body main footer .error {
   body .backgroundImg {
     background-size: contain;
     background-position: right;
-    background-image: linear-gradient(to bottom, rgba(18, 23, 37, 0.1), rgba(18, 23, 37, 0.1)), url("../images/tablet/image-host.jpg");
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -172,6 +183,9 @@ body main footer .error {
   body .backgroundImg footer {
     flex-direction: column;
     padding-top: 40px;
+  }
+  body .backgroundImg footer .error {
+    padding: 9px 0 0 64px;
   }
   body .backgroundImg footer .email {
     padding: 0;
@@ -203,7 +217,6 @@ body main footer .error {
     padding: 0;
     padding-left: 165px;
     margin-top: 130px;
-    background-image: url("../images/desktop/image-host.jpg");
     background-size: auto;
     min-width: 1440px;
   }
@@ -224,6 +237,9 @@ body main footer .error {
   body .backgroundImg .cont article .text {
     padding: 24px 278px 0 0;
   }
+  body .backgroundImg .cont .footer .error {
+    padding: 9px 0 0 32px;
+  }
   body .backgroundImg .cont .footer .email {
     padding: 0;
   }
@@ -233,10 +249,6 @@ body main footer .error {
   body .backgroundImg .cont .footer .email .btn {
     margin-top: 0px;
     z-index: 2;
-  }
-  body .backgroundImg .cont .footer .email .btn:hover,
-body .backgroundImg .cont .footer .email .btn:active {
-    cursor: url("../images/pointer.png");
   }
   body .backgroundImg .cont .footer .logos {
     padding: 64px 187px 0 0;
