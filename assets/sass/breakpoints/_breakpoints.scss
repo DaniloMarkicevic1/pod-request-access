@@ -1,0 +1,203 @@
+// Mobile
+body {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  .pattern-dots {
+    display: none;
+  }
+  .backgroundImg {
+    min-height: 667px;
+    background-size: cover;
+  }
+  main {
+    header {
+      padding: 62px 120px 0;
+    }
+    article {
+      padding: 57px 24px 0;
+      .text {
+        padding-top: 16px;
+      }
+    }
+    footer {
+      display: flex;
+      flex-direction: column-reverse;
+      .logos {
+        display: flex;
+        padding: 33px 30px 0;
+        opacity: 0.5;
+        align-items: center;
+        justify-content: space-between;
+        .spotify {
+          width: 56px;
+          height: 17px;
+        }
+        .apple {
+          width: 45px;
+          height: 17px;
+        }
+        .google {
+          width: 73px;
+          height: 11px;
+        }
+        .pocket {
+          width: 77px;
+          height: 15px;
+        }
+      }
+      .email {
+        padding: 48px 24px 94px;
+        .input,
+        .btn {
+          border-radius: 28px;
+        }
+        .input {
+          width: 100%;
+          max-width: 400px;
+          padding: 9px 0px 9px 32px;
+          border: none;
+        }
+        .btn {
+          padding: 9px 109px;
+          margin-top: 16px;
+          border: none;
+        }
+      }
+      .error {
+        padding-top: 9px;
+        margin-bottom: -40px;
+        display: none;
+      }
+    }
+  }
+}
+// Tablet
+@media screen and (min-width: 700px) {
+  body {
+    text-align: unset;
+    .pattern-dots {
+      display: block;
+      padding-top: 153px;
+      padding-left: 30px;
+    }
+    main {
+      padding-top: 258px;
+      header {
+        position: absolute;
+        padding: 0;
+        top: 0;
+        padding: 50px 0 0 39px;
+        .logoPod {
+          padding: 0;
+        }
+      }
+    }
+    .backgroundImg {
+      background-size: contain;
+      background-position: right;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      .cont {
+        padding-right: 94px;
+      }
+      article {
+        padding: 93px 0px 0px 39px;
+        .text {
+          padding: 31px 190px 0 0;
+        }
+      }
+      footer {
+        flex-direction: column;
+        padding-top: 40px;
+        .error {
+          padding: 9px 0 0 64px;
+          margin: 0;
+        }
+        .email {
+          padding: 0;
+          padding-left: 39px;
+          .input {
+            padding: 14px 0px 14px 32px;
+            max-width: 427px;
+          }
+          .btn {
+            margin-left: -170px;
+            padding: 9px 27px;
+          }
+        }
+        .logos {
+          padding: 64px 99px 0 39px;
+          .spotify {
+            width: 96px;
+            height: 29px;
+          }
+          .apple {
+            width: 78px;
+            height: 29px;
+          }
+          .google {
+            width: 125px;
+            height: 18px;
+          }
+          .pocket {
+            width: 129px;
+            height: 26px;
+          }
+        }
+      }
+    }
+  }
+}
+// Desktop
+@media screen and (min-width: 1300px) {
+  body {
+    align-items: center;
+    .pattern-dots {
+      text-align: right;
+      padding: 0;
+      margin-top: -65px;
+      width: 1440px;
+    }
+    .backgroundImg {
+      padding: 0;
+      padding-left: 165px;
+      margin-top: 130px;
+      background-size: auto;
+      min-width: 1440px;
+      header {
+        padding-top: 102px;
+        padding-left: 0px;
+      }
+      .cont {
+        padding: 0;
+        max-width: 732px;
+        min-height: 537px;
+        article {
+          padding: 0;
+          .title {
+            padding-top: 93px;
+          }
+          .text {
+            padding: 24px 278px 0 0;
+          }
+        }
+        .footer {
+          .error {
+            padding: 9px 0 0 32px;
+          }
+          .email {
+            padding: 0;
+            .input {
+              padding-right: 175px;
+            }
+          }
+          .logos {
+            padding: 64px 187px 0 0;
+          }
+        }
+      }
+    }
+  }
+}
