@@ -12,6 +12,5 @@ btn.addEventListener("click", (event) => {
   else {
     inputValue.value = '';
     error.style.display = "none";
-
   }
 });

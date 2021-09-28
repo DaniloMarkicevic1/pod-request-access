@@ -197,6 +197,7 @@ body main footer .error {
   }
   body .backgroundImg footer .error {
     padding: 9px 0 0 64px;
+    margin: 0;
   }
   body .backgroundImg footer .email {
     padding: 0;
