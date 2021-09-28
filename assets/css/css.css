@@ -29,7 +29,6 @@ body main footer .email .btn {
   line-height: 28px;
   color: #121725;
   background-color: #54e6af;
-  z-index: 10;
 }
 body main footer .email .btn:hover,
 body main footer .email .btn:active {
@@ -166,7 +165,6 @@ body main footer .error {
   }
   body main {
     padding-top: 258px;
-    padding-bottom: 257;
   }
   body main header {
     position: absolute;
@@ -275,10 +273,6 @@ body main footer .error {
   }
   body .backgroundImg .cont .footer .email .input {
     padding-right: 175px;
-  }
-  body .backgroundImg .cont .footer .email .btn {
-    margin-top: 0px;
-    z-index: 2;
   }
   body .backgroundImg .cont .footer .logos {
     padding: 64px 187px 0 0;
