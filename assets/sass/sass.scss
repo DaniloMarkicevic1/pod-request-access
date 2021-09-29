@@ -1,4 +1,4 @@
-@use "./components/_fontsAndColors";
+@use "./variables" as v;
 
 * {
   margin: 0;
@@ -8,6 +8,8 @@
     display: flex;
     text-align: center;
     flex-direction: column;
+    font-family: v.$font;
+    background-color: v.$primary;
     @media screen and (min-width: 700px) {
       text-align: unset;
     }
@@ -29,9 +31,12 @@
       }
     }
     .backgroundImg {
+      background-image: v.$mobileImg;
+      background-repeat: no-repeat;
       min-height: 667px;
       background-size: cover;
       @media screen and (min-width: 700px) {
+        background-image: v.$tabletImg;
         padding-top: 258px;
         background-size: contain;
         background-position: right;
@@ -40,6 +45,7 @@
         justify-content: flex-end;
       }
       @media screen and (min-width: 1300px) {
+        background-image: v.$desktopImg;
         padding: 0;
         padding-left: 165px;
         margin-top: 130px;
@@ -74,6 +80,12 @@
           }
         }
       }
+      article,
+      footer {
+        @media screen and(min-width: 700px) {
+          background-color: v.$primary;
+        }
+      }
       article {
         padding: 57px 24px 0;
         @media screen and(min-width: 700px) {
@@ -83,13 +95,31 @@
           padding: 0;
         }
         .title {
+          text-transform: uppercase;
+          font-size: v.$titleSizeMob;
+          line-height: v.$titleLHMob;
+          color: v.$white;
+          @media screen and (min-width: 700px) {
+            font-size: v.$titleTSize;
+            line-height: v.$titleTLH;
+          }
           @media screen and (min-width: 1300px) {
+            font-size: v.$titleSize;
+            line-height: v.$titleLH;
             padding-top: 93px;
+          }
+          .titleGreen {
+            color: v.$lightGreen;
           }
         }
         .text {
           padding-top: 16px;
+          font-size: v.$textSizeMob;
+          line-height: v.$textLHMob;
+          color: v.$textColor;
           @media screen and(min-width: 700px) {
+            font-size: v.$textSize;
+            line-height: v.$textLH;
             padding: 31px 190px 0 0;
           }
           @media screen and(min-width: 1300px) {
@@ -163,6 +193,12 @@
             border-radius: 28px;
           }
           .input {
+            font-family: v.$font;
+            font-size: v.$emailTextSize;
+            line-height: v.$emailTextLH;
+            background-color: v.$emailColor;
+            font-weight: 700;
+            color: v.$white;
             width: 100%;
             max-width: 400px;
             padding: 9px 0px 9px 32px;
@@ -175,7 +211,18 @@
               padding-right: 175px;
             }
           }
+          .input:focus {
+            border: none;
+            outline: none;
+          }
           .btn {
+            font-family: v.$font;
+            text-transform: capitalize;
+            font-size: v.$emailTextSize;
+            font-weight: 700;
+            line-height: v.$emailTextLH;
+            color: v.$primary;
+            background-color: v.$lightGreen;
             padding: 9px 109px;
             margin-top: 16px;
             border: none;
@@ -183,9 +230,17 @@
               margin-left: -170px;
               padding: 9px 27px;
             }
+            .btn:hover,
+            .btn:active {
+              cursor: v.$cursor;
+              background-color: v.$btnHover;
+            }
           }
         }
         .error {
+          font-size: v.$errorText;
+          line-height: v.$errorTextLH;
+          color: v.$errorColor;
           padding-top: 9px;
           margin-bottom: -40px;
           display: none;

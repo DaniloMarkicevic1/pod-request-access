@@ -1,87 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Chivo:wght@300;700&display=swap");
-body {
-  font-family: "Chivo", sans-serif;
-  background-color: #121725;
-}
-body main {
-  background-image: linear-gradient(to bottom, rgba(18, 23, 37, 0.9), rgba(18, 23, 37, 0.9)), url("../images/mobile/image-host.jpg");
-  background-repeat: no-repeat;
-}
-body main article .title {
-  text-transform: uppercase;
-  font-size: 26px;
-  line-height: 38px;
-  color: #ffffff;
-}
-body main article .title .titleGreen {
-  color: #54e6af;
-}
-body main article .text {
-  font-size: 15px;
-  line-height: 25px;
-  color: #c2cbe5;
-}
-body main footer .email .btn {
-  font-family: "Chivo", sans-serif;
-  text-transform: capitalize;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 28px;
-  color: #121725;
-  background-color: #54e6af;
-}
-body main footer .email .btn:hover,
-body main footer .email .btn:active {
-  cursor: url("../images/pointer.png"), pointer;
-  background-color: #b3ffe2;
-}
-body main footer .email .input {
-  font-family: "Chivo", sans-serif;
-  font-size: 14px;
-  line-height: 28px;
-  background-color: #2c344b;
-  font-weight: 700;
-  color: #ffffff;
-}
-body main footer .email .input:focus {
-  border: none;
-  outline: none;
-}
-body main footer .error {
-  font-size: 12px;
-  line-height: 14px;
-  color: #fb3e3e;
-}
-
-@media screen and (min-width: 700px) {
-  body .backgroundImg {
-    background-image: linear-gradient(to bottom, rgba(18, 23, 37, 0.1), rgba(18, 23, 37, 0.1)), url("../images/tablet/image-host.jpg");
-  }
-  body .backgroundImg article,
-body .backgroundImg footer {
-    background-color: #121725;
-  }
-  body .backgroundImg article .title {
-    font-size: 48px;
-    line-height: 56px;
-  }
-  body .backgroundImg article .text {
-    font-size: 18px;
-    line-height: 28px;
-  }
-}
-@media screen and (min-width: 1300px) {
-  body .backgroundImg {
-    background-image: url("../images/desktop/image-host.jpg");
-  }
-  body .backgroundImg .cont article .title {
-    font-size: 52px;
-    line-height: 62px;
-  }
-  body .backgroundImg .cont footer .email .btn:hover {
-    cursor: url("../images/pointer.png"), pointer;
-  }
-}
 * {
   margin: 0;
   padding: 0;
@@ -91,6 +8,8 @@ body .backgroundImg footer {
   display: flex;
   text-align: center;
   flex-direction: column;
+  font-family: "Chivo", sans-serif;
+  background-color: #121725;
 }
 @media screen and (min-width: 700px) {
   * body {
@@ -121,11 +40,14 @@ body .backgroundImg footer {
   }
 }
 * body .backgroundImg {
+  background-image: linear-gradient(to bottom, rgba(18, 23, 37, 0.9), rgba(18, 23, 37, 0.9)), url("../images/mobile/image-host.jpg");
+  background-repeat: no-repeat;
   min-height: 667px;
   background-size: cover;
 }
 @media screen and (min-width: 700px) {
   * body .backgroundImg {
+    background-image: linear-gradient(to bottom, rgba(18, 23, 37, 0.1), rgba(18, 23, 37, 0.1)), url("../images/tablet/image-host.jpg");
     padding-top: 258px;
     background-size: contain;
     background-position: right;
@@ -136,6 +58,7 @@ body .backgroundImg footer {
 }
 @media screen and (min-width: 1300px) {
   * body .backgroundImg {
+    background-image: url("../images/desktop/image-host.jpg");
     padding: 0;
     padding-left: 165px;
     margin-top: 130px;
@@ -177,6 +100,12 @@ body .backgroundImg footer {
     padding: 0;
   }
 }
+@media screen and (min-width: 700px) {
+  * body .backgroundImg article,
+* body .backgroundImg footer {
+    background-color: #121725;
+  }
+}
 * body .backgroundImg article {
   padding: 57px 24px 0;
 }
@@ -190,16 +119,38 @@ body .backgroundImg footer {
     padding: 0;
   }
 }
+* body .backgroundImg article .title {
+  text-transform: uppercase;
+  font-size: 26px;
+  line-height: 38px;
+  color: #ffffff;
+}
+@media screen and (min-width: 700px) {
+  * body .backgroundImg article .title {
+    font-size: 48px;
+    line-height: 56px;
+  }
+}
 @media screen and (min-width: 1300px) {
   * body .backgroundImg article .title {
+    font-size: 52px;
+    line-height: 62px;
     padding-top: 93px;
   }
 }
+* body .backgroundImg article .title .titleGreen {
+  color: #54e6af;
+}
 * body .backgroundImg article .text {
   padding-top: 16px;
+  font-size: 15px;
+  line-height: 25px;
+  color: #c2cbe5;
 }
 @media screen and (min-width: 700px) {
   * body .backgroundImg article .text {
+    font-size: 18px;
+    line-height: 28px;
     padding: 31px 190px 0 0;
   }
 }
@@ -294,6 +245,12 @@ body .backgroundImg footer {
   border-radius: 28px;
 }
 * body .backgroundImg .footer .email .input {
+  font-family: "Chivo", sans-serif;
+  font-size: 14px;
+  line-height: 28px;
+  background-color: #2c344b;
+  font-weight: 700;
+  color: #ffffff;
   width: 100%;
   max-width: 400px;
   padding: 9px 0px 9px 32px;
@@ -310,7 +267,18 @@ body .backgroundImg footer {
     padding-right: 175px;
   }
 }
+* body .backgroundImg .footer .email .input:focus {
+  border: none;
+  outline: none;
+}
 * body .backgroundImg .footer .email .btn {
+  font-family: "Chivo", sans-serif;
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #121725;
+  background-color: #54e6af;
   padding: 9px 109px;
   margin-top: 16px;
   border: none;
@@ -321,7 +289,15 @@ body .backgroundImg footer {
     padding: 9px 27px;
   }
 }
+* body .backgroundImg .footer .email .btn .btn:hover,
+* body .backgroundImg .footer .email .btn .btn:active {
+  cursor: url("../images/pointer.png"), pointer;
+  background-color: #b3ffe2;
+}
 * body .backgroundImg .footer .error {
+  font-size: 12px;
+  line-height: 14px;
+  color: #fb3e3e;
   padding-top: 9px;
   margin-bottom: -40px;
   display: none;
