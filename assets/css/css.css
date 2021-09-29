@@ -82,207 +82,260 @@ body .backgroundImg footer {
     cursor: url("../images/pointer.png"), pointer;
   }
 }
-body {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* body {
   display: flex;
   text-align: center;
   flex-direction: column;
 }
-body .pattern-dots {
-  display: none;
-}
-body .backgroundImg {
-  min-height: 667px;
-  background-size: cover;
-}
-body main header {
-  padding: 62px 120px 0;
-}
-body main article {
-  padding: 57px 24px 0;
-}
-body main article .text {
-  padding-top: 16px;
-}
-body main footer {
-  display: flex;
-  flex-direction: column-reverse;
-}
-body main footer .logos {
-  display: flex;
-  padding: 33px 30px 0;
-  opacity: 0.5;
-  align-items: center;
-  justify-content: space-between;
-}
-body main footer .logos .spotify {
-  width: 56px;
-  height: 17px;
-}
-body main footer .logos .apple {
-  width: 45px;
-  height: 17px;
-}
-body main footer .logos .google {
-  width: 73px;
-  height: 11px;
-}
-body main footer .logos .pocket {
-  width: 77px;
-  height: 15px;
-}
-body main footer .email {
-  padding: 48px 24px 94px;
-}
-body main footer .email .input,
-body main footer .email .btn {
-  border-radius: 28px;
-}
-body main footer .email .input {
-  width: 100%;
-  max-width: 400px;
-  padding: 9px 0px 9px 32px;
-  border: none;
-}
-body main footer .email .btn {
-  padding: 9px 109px;
-  margin-top: 16px;
-  border: none;
-}
-body main footer .error {
-  padding-top: 9px;
-  margin-bottom: -40px;
-  display: none;
-}
-
 @media screen and (min-width: 700px) {
-  body {
+  * body {
     text-align: unset;
   }
-  body .pattern-dots {
+}
+@media screen and (min-width: 1300px) {
+  * body {
+    align-items: center;
+  }
+}
+* body .pattern-dots {
+  display: none;
+}
+@media screen and (min-width: 700px) {
+  * body .pattern-dots {
     display: block;
     padding-top: 153px;
     padding-left: 30px;
   }
-  body main {
+}
+@media screen and (min-width: 1300px) {
+  * body .pattern-dots {
+    text-align: right;
+    padding: 0;
+    margin-top: -65px;
+    width: 1440px;
+  }
+}
+* body .backgroundImg {
+  min-height: 667px;
+  background-size: cover;
+}
+@media screen and (min-width: 700px) {
+  * body .backgroundImg {
     padding-top: 258px;
-  }
-  body main header {
-    position: absolute;
-    padding: 0;
-    top: 0;
-    padding: 50px 0 0 39px;
-  }
-  body main header .logoPod {
-    padding: 0;
-  }
-  body .backgroundImg {
     background-size: contain;
     background-position: right;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
   }
-  body .backgroundImg .cont {
-    padding-right: 94px;
-  }
-  body .backgroundImg article {
-    padding: 93px 0px 0px 39px;
-  }
-  body .backgroundImg article .text {
-    padding: 31px 190px 0 0;
-  }
-  body .backgroundImg footer {
-    flex-direction: column;
-    padding-top: 40px;
-  }
-  body .backgroundImg footer .error {
-    padding: 9px 0 0 64px;
-    margin: 0;
-  }
-  body .backgroundImg footer .email {
-    padding: 0;
-    padding-left: 39px;
-  }
-  body .backgroundImg footer .email .input {
-    padding: 14px 0px 14px 32px;
-    max-width: 427px;
-  }
-  body .backgroundImg footer .email .btn {
-    margin-left: -170px;
-    padding: 9px 27px;
-  }
-  body .backgroundImg footer .logos {
-    padding: 64px 99px 0 39px;
-  }
-  body .backgroundImg footer .logos .spotify {
-    width: 96px;
-    height: 29px;
-  }
-  body .backgroundImg footer .logos .apple {
-    width: 78px;
-    height: 29px;
-  }
-  body .backgroundImg footer .logos .google {
-    width: 125px;
-    height: 18px;
-  }
-  body .backgroundImg footer .logos .pocket {
-    width: 129px;
-    height: 26px;
-  }
 }
 @media screen and (min-width: 1300px) {
-  body {
-    align-items: center;
-  }
-  body .pattern-dots {
-    text-align: right;
-    padding: 0;
-    margin-top: -65px;
-    width: 1440px;
-  }
-  body .backgroundImg {
+  * body .backgroundImg {
     padding: 0;
     padding-left: 165px;
     margin-top: 130px;
     background-size: auto;
     min-width: 1440px;
   }
-  body .backgroundImg header {
+}
+@media screen and (min-width: 700px) {
+  * body .backgroundImg .cont {
+    padding-right: 94px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  * body .backgroundImg .cont {
+    padding: 0;
+    max-width: 732px;
+    min-height: 537px;
+  }
+}
+* body .backgroundImg header {
+  padding: 62px 120px 0;
+}
+@media screen and (min-width: 700px) {
+  * body .backgroundImg header {
+    position: absolute;
+    padding: 0;
+    top: 0;
+    padding: 50px 0 0 39px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  * body .backgroundImg header {
     padding-top: 102px;
     padding-left: 0px;
   }
-  body .backgroundImg .cont {
-    padding: 0;
-    max-width: 732px;
-    min-height: 538px;
-  }
-  body .backgroundImg .cont article {
+}
+@media screen and (min-width: 700px) {
+  * body .backgroundImg header .logoPod {
     padding: 0;
   }
-  body .backgroundImg .cont article .title {
+}
+* body .backgroundImg article {
+  padding: 57px 24px 0;
+}
+@media screen and (min-width: 700px) {
+  * body .backgroundImg article {
+    padding: 93px 0px 0px 39px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  * body .backgroundImg article {
+    padding: 0;
+  }
+}
+@media screen and (min-width: 1300px) {
+  * body .backgroundImg article .title {
     padding-top: 93px;
   }
-  body .backgroundImg .cont article .text {
+}
+* body .backgroundImg article .text {
+  padding-top: 16px;
+}
+@media screen and (min-width: 700px) {
+  * body .backgroundImg article .text {
+    padding: 31px 190px 0 0;
+  }
+}
+@media screen and (min-width: 1300px) {
+  * body .backgroundImg article .text {
     padding: 24px 278px 0 0;
   }
-  body .backgroundImg .cont .footer .error {
-    padding: 9px 0 0 32px;
+}
+* body .backgroundImg .footer {
+  display: flex;
+  flex-direction: column-reverse;
+}
+@media screen and (min-width: 700px) {
+  * body .backgroundImg .footer {
+    flex-direction: column;
+    padding-top: 40px;
   }
-  body .backgroundImg .cont .footer .email {
-    padding: 0;
+}
+* body .backgroundImg .footer .logos {
+  display: flex;
+  padding: 33px 30px 0;
+  opacity: 0.5;
+  align-items: center;
+  justify-content: space-between;
+}
+@media screen and (min-width: 700px) {
+  * body .backgroundImg .footer .logos {
+    padding: 64px 99px 0 39px;
   }
-  body .backgroundImg .cont .footer .email .input {
-    padding-right: 175px;
-  }
-  body .backgroundImg .cont .footer .logos {
+}
+@media screen and (min-width: 1300px) {
+  * body .backgroundImg .footer .logos {
     padding: 64px 187px 0 0;
   }
 }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+* body .backgroundImg .footer .logos .spotify {
+  width: 56px;
+  height: 17px;
+}
+@media screen and (min-width: 700px) {
+  * body .backgroundImg .footer .logos .spotify {
+    width: 96px;
+    height: 29px;
+  }
+}
+* body .backgroundImg .footer .logos .apple {
+  width: 45px;
+  height: 17px;
+}
+@media screen and (min-width: 700px) {
+  * body .backgroundImg .footer .logos .apple {
+    width: 78px;
+    height: 29px;
+  }
+}
+* body .backgroundImg .footer .logos .google {
+  width: 73px;
+  height: 11px;
+}
+@media screen and (min-width: 700px) {
+  * body .backgroundImg .footer .logos .google {
+    width: 125px;
+    height: 18px;
+  }
+}
+* body .backgroundImg .footer .logos .pocket {
+  width: 77px;
+  height: 15px;
+}
+@media screen and (min-width: 700px) {
+  * body .backgroundImg .footer .logos .pocket {
+    width: 129px;
+    height: 26px;
+  }
+}
+* body .backgroundImg .footer .email {
+  padding: 48px 24px 94px;
+}
+@media screen and (min-width: 700px) {
+  * body .backgroundImg .footer .email {
+    padding: 0;
+    padding-left: 39px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  * body .backgroundImg .footer .email {
+    padding: 0;
+  }
+}
+* body .backgroundImg .footer .email .input,
+* body .backgroundImg .footer .email .btn {
+  border-radius: 28px;
+}
+* body .backgroundImg .footer .email .input {
+  width: 100%;
+  max-width: 400px;
+  padding: 9px 0px 9px 32px;
+  border: none;
+}
+@media screen and (min-width: 700px) {
+  * body .backgroundImg .footer .email .input {
+    padding: 14px 0px 14px 32px;
+    max-width: 427px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  * body .backgroundImg .footer .email .input {
+    padding-right: 175px;
+  }
+}
+* body .backgroundImg .footer .email .btn {
+  padding: 9px 109px;
+  margin-top: 16px;
+  border: none;
+}
+@media screen and (min-width: 700px) {
+  * body .backgroundImg .footer .email .btn {
+    margin-left: -170px;
+    padding: 9px 27px;
+  }
+}
+* body .backgroundImg .footer .error {
+  padding-top: 9px;
+  margin-bottom: -40px;
+  display: none;
+}
+@media screen and (min-width: 700px) {
+  * body .backgroundImg .footer .error {
+    padding: 9px 0 0 64px;
+    margin: 0;
+  }
+}
+@media screen and (min-width: 1300px) {
+  * body .backgroundImg .footer .error {
+    padding: 9px 0 0 32px;
+  }
 }
 
 /*# sourceMappingURL=css.css.map */
