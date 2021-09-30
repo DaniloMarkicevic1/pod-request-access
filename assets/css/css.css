@@ -282,6 +282,7 @@
   padding: 9px 109px;
   margin-top: 16px;
   border: none;
+  z-index: 2;
 }
 @media screen and (min-width: 700px) {
   * body .backgroundImg .footer .email .btn {
@@ -289,8 +290,7 @@
     padding: 9px 27px;
   }
 }
-* body .backgroundImg .footer .email .btn .btn:hover,
-* body .backgroundImg .footer .email .btn .btn:active {
+* body .backgroundImg .footer .email .btn:hover {
   cursor: url("../images/pointer.png"), pointer;
   background-color: #b3ffe2;
 }
