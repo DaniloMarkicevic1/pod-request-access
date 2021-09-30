@@ -16,3 +16,4 @@
 .prettierignore
 .READMER-template.md
 .README.md
+node_modules

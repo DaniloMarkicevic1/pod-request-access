@@ -1,74 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/images/favicon-32x32.png"
-    />
-    <link rel="stylesheet" href="./assets/css/css.css" />
-    <title>Pod request access landing page</title>
-  </head>
-  <body>
-    <main class="backgroundImg">
-      <header>
-        <div class="logoPod">
-          <img src="./assets/images/desktop/logo.svg" alt="pod-logo" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/images/favicon-32x32.png"
+        />
+        <link rel="stylesheet" href="./assets/css/css.css" />
+        <title>Pod request access landing page</title>
+    </head>
+    <body>
+        <main class="backgroundImg">
+            <header>
+                <div class="logoPod">
+                    <img
+                        src="./assets/images/desktop/logo.svg"
+                        alt="pod-logo"
+                    />
+                </div>
+            </header>
+            <div class="cont">
+                <article>
+                    <p class="title">
+                        <span class="titleGreen">Publish your podcasts</span>
+                        everywhere.
+                    </p>
+                    <p class="text">
+                        Upload your audio to Pod with a single click. We’ll then
+                        distribute your podcast to Spotify, Apple Podcasts,
+                        Google Podcasts, Pocket Casts and more!
+                    </p>
+                </article>
+                <footer class="footer">
+                    <form class="email">
+                        <input
+                            class="input"
+                            type="text"
+                            name="mail"
+                            placeholder="Email address"
+                        />
+                        <button class="btn">Request access</button>
+                    </form>
+                    <p class="error">Oops! Please check your email</p>
+                    <div class="logos">
+                        <img
+                            class="spotify"
+                            src="./assets/images/desktop/spotify.svg"
+                            alt=""
+                        />
+                        <img
+                            class="apple"
+                            src="./assets/images/desktop/apple-podcast.svg"
+                            alt=""
+                        />
+                        <img
+                            class="google"
+                            src="./assets/images/desktop/google-podcasts.svg"
+                            alt=""
+                        />
+                        <img
+                            class="pocket"
+                            src="./assets/images/desktop/pocket-casts.svg"
+                            alt=""
+                        />
+                    </div>
+                </footer>
+            </div>
+        </main>
+        <div class="pattern-dots">
+            <img
+                src="./assets/images/desktop/bg-pattern-dots.svg"
+                alt=""
+                srcset=""
+            />
         </div>
-      </header>
-      <div class="cont">
-        <article>
-          <p class="title">
-            <span class="titleGreen">Publish your podcasts</span> everywhere.
-          </p>
-          <p class="text">
-            Upload your audio to Pod with a single click. We’ll then distribute
-            your podcast to Spotify, Apple Podcasts, Google Podcasts, Pocket
-            Casts and more!
-          </p>
-        </article>
-        <footer class="footer">
-          <form class="email">
-            <input
-              class="input"
-              type="text"
-              name="mail"
-              placeholder="Email address"
-            />
-            <button class="btn">Request access</button>
-          </form>
-          <p class="error">Oops! Please check your email</p>
-          <div class="logos">
-            <img
-              class="spotify"
-              src="./assets/images/desktop/spotify.svg"
-              alt=""
-            />
-            <img
-              class="apple"
-              src="./assets/images/desktop/apple-podcast.svg"
-              alt=""
-            />
-            <img
-              class="google"
-              src="./assets/images/desktop/google-podcasts.svg"
-              alt=""
-            />
-            <img
-              class="pocket"
-              src="./assets/images/desktop/pocket-casts.svg"
-              alt=""
-            />
-          </div>
-        </footer>
-      </div>
-    </main>
-    <div class="pattern-dots">
-      <img src="./assets/images/desktop/bg-pattern-dots.svg" alt="" srcset="" />
-    </div>
-    <script src="./script.js"></script>
-  </body>
+        <script src="./scripts/script.js"></script>
+    </body>
 </html>

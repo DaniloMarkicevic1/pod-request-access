@@ -1,0 +1,23 @@
+{
+  "name": "pod-request-access",
+  "version": "1.0.0",
+  "description": "sass --watch assets/sass/sass.scss assets/css/css.css",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write \"**/*.{js,scss}\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DaniloMarkicevic1/pod-request-access.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DaniloMarkicevic1/pod-request-access/issues"
+  },
+  "homepage": "https://github.com/DaniloMarkicevic1/pod-request-access#readme",
+  "devDependencies": {
+    "prettier": "^2.4.1"
+  }
+}
